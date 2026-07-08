@@ -16,7 +16,7 @@ app = FastAPI()
 # Add the exam page origin here if it is shown in the assignment.
 ALLOWED_ORIGINS = [
     "https://app-8t8xgk.example.com",
-    "https://seekh.study.iitm.ac.in",
+    "https://exam.sanand.workers.dev",
 ]
 
 client_requests = defaultdict(deque)
@@ -76,7 +76,6 @@ async def request_context(request: Request, call_next):
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
-    allow_origin_regex=r"https://.*\.study\.iitm\.ac\.in",
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
