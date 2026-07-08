@@ -15,7 +15,8 @@ app = FastAPI()
 
 # Add the exam page origin here if it is shown in the assignment.
 ALLOWED_ORIGINS = [
-    "https://exam.sanand.workers.dev/tds-2026-05-ga2",
+    "https://exam.sanand.workers.dev/tds-2026-05-ga2"
+    "https://app-8t8xgk.example.com",
     # "https://<exam-origin>"
 ]
 
